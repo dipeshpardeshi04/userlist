@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.user-img{
+  border: 1px solid rgb(131, 79, 252);
+}
+.img-btn{
+  border: 4px solid rgb(131, 79, 252);
+}
+.btnn{
+  background-color: rgb(131, 79, 252);
+  padding:  0 1vw;
+  border-radius: 3px;
+  border: none;
+}
+.text{
+  text-align: center;
+  margin: 2vw;
+}
+.navv{
+  background-color: rgb(181, 181, 181);
+}

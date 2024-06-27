@@ -1,0 +1,13 @@
+.use{
+    /* background-color: aqua; */
+    overflow-x: scroll;
+    height: 50vw;
+}
+.use::-webkit-scrollbar{
+    display: none;
+}
+
+ul{
+    list-style: none;
+    /* font-size: 1vh; */
+}

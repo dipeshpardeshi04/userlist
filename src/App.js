@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import UserList from "./userlist";
+import UserDetails from "./userdetails";
+import NavBar from "./NavBar";
+const App = () => {
+  const [selectedUser, setSelectedUser] = useState(null);
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <Container fluid>
+        <Row>
+          <Col md={4} className="border-end scr">
+            <h2>Users</h2>
+            <UserList onSelectUser={setSelectedUser} />
+          </Col>
+
+          <Col md={8}>
+            <UserDetails user={selectedUser} />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
-}
+};
 
 export default App;
